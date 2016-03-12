@@ -5,7 +5,7 @@ URL = require('socket.url')
 JSON = require('dkjson')
 HTTPS = require('ssl.https')
 ----config----
-local bot_api_key = " "--توکن بوت را درون " قرار دهید --
+local bot_api_key = "206992491:AAFCnTo8BT_0f9BOVBq8wizT4tdT_wHPDVA"
 local BASE_URL = "https://api.telegram.org/bot"..bot_api_key
 local BASE_FOLDER = ""
 local start = [[
@@ -21,21 +21,18 @@ hi :)
 - _test_
 
 /hyper [[text](url)](url)
-- [BeatBot](BeatBot.ir)
+- [Developer site](shayanpanapa.ir)
 
 *EXAMPLE*
 
 /hyper [`Hi`]
 [*I'm a api bot* ]
-[_BeatBot Team created me_]
-[[BeatBot Channel](test)][(http://telegram.me/beatbot_team)]
+[S.H.O.S Bot created me_]
+[[Developer](test)][(http://telegram.me/shayan123hacker)]
 
 *RESULT*
 
 `Hi`
-*I'm a api bot* 
-_BeatBot Team created me_
-[BeatBot Channel](http://telegram.me/beatbot_team)
 
 *OTHER*
 
@@ -49,6 +46,7 @@ _BeatBot Team created me_
 `/webshot url`
 
 _TNX TO USE ME :)_
+[Developer](http://telegram.me/shayan123hacker)
 ]] 
 
 -------
@@ -207,7 +205,7 @@ function bot_run()
 
 	bot = bot.result
 
-	local bot_info = "Username = @"..bot.username.."\nName = "..bot.first_name.."\nId = "..bot.id.." \nBeatBot hyper bot :)\nthx to @imandaneshi\neditor: @amirho3inf \nchannel : @BeatBot_Team"
+	local bot_info = "Username = @"..bot.username.."\nName = "..bot.first_name.."\nId = "..bot.id.." \nS.H.O.S hyper bot :)\nthx to @shayan123hacker"
 
 	print(bot_info)
 
@@ -263,7 +261,7 @@ function msg_processor(msg)
 
 elseif msg.text:match("^/[sS]tart") or msg.text:match("^/[Hh]elp") then
  sendMessage(msg.chat.id, start, true, false, true)
-  sendMessage(msg.chat.id, [[[ربات خودتونو بسازید :)](http://telegram.me/beatbot_team)]], true, false, true)
+  sendMessage(msg.chat.id, [[[Developer shayan123hacker](http://telegram.me/shayan123hacker)]], true, false, true)
 return end
 
 end
